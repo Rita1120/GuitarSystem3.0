@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="guitar.Model.Inventory" %>
 <%@ page import="guitar.Model.Guitar" %>
@@ -31,7 +31,6 @@
 		inventory = (Inventory)request.getAttribute("result");
 		List guitars = new ArrayList();
 		guitars = inventory.getGuitar();
-		System.out.print(guitars.size());
 		if(guitars.size()>0){
 		Iterator i = guitars.iterator();
 		while(i.hasNext()){
